@@ -1,4 +1,12 @@
 #include <stdio.h>
+/**
+ * main - start point of programm
+ *
+ *Description - print size of various data types 
+ *
+ *return :always 0 (succes)
+ */
+
 
 int main(void)
 {
