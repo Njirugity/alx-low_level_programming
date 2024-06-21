@@ -1,12 +1,9 @@
 #include<stdio.h>
 /**
- * main - start point of programm
+ * main - Entry point
  *
- *Description - print message to stoutput using printf 
- *
- *return :always 0 (succes)
+ * Return: Always 0 (Success)
  */
-
 
 int main(void)
 {

@@ -1,12 +1,9 @@
 #include<stdio.h>
 /**
- * main - start point of programm
+ * main - Entry point
  *
- *Description - print message to stoutput using put
- *
- *return :always 0 (succes)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
