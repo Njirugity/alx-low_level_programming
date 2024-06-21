@@ -1,12 +1,9 @@
 #include <stdio.h>
 /**
- * main - start point of programm
+ * main - Entry point
  *
- *Description - print size of various data types 
- *
- *return :always 0 (succes)
+ * Return: Always 0 (Success)
  */
-
 
 int main(void)
 {
