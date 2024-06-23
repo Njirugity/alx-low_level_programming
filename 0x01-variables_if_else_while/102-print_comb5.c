@@ -12,6 +12,7 @@ int main(void)
 	int b = 0;
 
 	while (a <= 9)
+		a = b + 1;
 	{
 		while (b <= 9)
 		{
@@ -26,7 +27,6 @@ int main(void)
 		b++;
 		}
 	a++;
-	b = a + 9;
 	}
 
 	putchar('\n');
