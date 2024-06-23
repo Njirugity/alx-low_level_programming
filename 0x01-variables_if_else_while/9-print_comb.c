@@ -16,8 +16,8 @@ int main(void)
 		if (op != 9)
 		{
 			putchar(',');
-			op++;
 		}
+		op++;
 	}
 	putchar('\n');
 
