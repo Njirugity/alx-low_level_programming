@@ -2,8 +2,8 @@
 
 /**
 *_strlen - Return length of string
-*@i : Counter
-*Return : Value of the function
+*@s : String to check
+*Return: Length of string
 **/
 
 int _strlen(char *s)
