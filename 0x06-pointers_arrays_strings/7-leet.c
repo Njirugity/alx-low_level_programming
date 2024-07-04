@@ -1,31 +1,25 @@
 #include "main.h"
 
 /**
-*leet - switch letters to numbers
-*@s: string to switch
-*Return: switched string
-**/
+ * leet - encode a string into 1337.
+ * @s: input string to encode
+ * Return: encoded string 
+ */
 
 char *leet(char *s)
 {
-	int i = 0;
-	int j;
+	int i = 0, j;
+	char subs[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'},
+	     str[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 
-	char *a = "aAeEoOtTlL";
-	char *b = "4433007711";
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i])
 	{
-		for (j = 0; a[j] != '\0'; j++)
-		{
-			if (s[i] == a[j])
-			{
-				s[i] = b[j];
-				break;
-			}
-		}
+		for (j = 0; j < 10; j++)
+			if (s[i] == str[j])
+				s[i] = subs[j];
 
+		i++;
 	}
-	return (s);
 
+	return (s);
 }
