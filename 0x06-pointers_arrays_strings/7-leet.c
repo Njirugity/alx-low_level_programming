@@ -3,7 +3,7 @@
 /**
  * leet - encode a string into 1337.
  * @s: input string to encode
- * Return: encoded string 
+ * Return: encoded string
  */
 
 char *leet(char *s)
