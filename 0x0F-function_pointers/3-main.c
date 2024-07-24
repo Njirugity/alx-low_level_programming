@@ -1,12 +1,11 @@
 #include "3-calc.h"
 
 /**
- * main - program that perfroms simple operations
- * @argc: number of arguments
- * @argv: array of arguments
- *
- * Return: Always 0 (Success)
- */
+*main - program that perfroms simple operations
+*@argc: number of arguments
+*@argv: array of arguments
+*Return: Always 0 (Success)
+**/
 int main(int argc, char *argv[])
 {
 	int n1, n2;
@@ -18,7 +17,13 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	
+
+	if (argv[2][1])
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
 
