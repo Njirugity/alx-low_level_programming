@@ -18,14 +18,17 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (argv[2][1])
+
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[3]);
+
+	func = get_op_func(argv[2]);
+
+	if (func == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-
-	n1 = atoi(argv[1]);
-	n2 = atoi(argv[3]);
 
 	a = *argv[2];
 
@@ -33,13 +36,6 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(100);
-	}
-
-	func = get_op_func(argv[2]);
-	if (func == NULL)
-	{
-		printf("Error\n");
-		exit(99);
 	}
 
 	printf("%d\n", func(n1, n2));
